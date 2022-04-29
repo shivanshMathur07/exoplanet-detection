@@ -4,7 +4,7 @@ import pandas as pd
 import warnings
 warnings.filterwarnings(action='ignore')
 
-pickle_in = open("my_model.pickle","rb")
+pickle_in = open("web\prediction_helper\my_model.pickle","rb")
 trained_model = pickle.load(pickle_in)
 
 def get_prediction(data):
@@ -26,3 +26,5 @@ def get_prediction(data):
         return("Exoplanet Candidate")
     else:
         return("False Positive Candidate")
+
+
