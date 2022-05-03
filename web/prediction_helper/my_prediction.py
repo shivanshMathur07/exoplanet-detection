@@ -4,7 +4,9 @@ import pandas as pd
 import warnings
 warnings.filterwarnings(action='ignore')
 
-pickle_in = open("exoplanet-detection\web\prediction_helper\my_model.pickle","rb")
+model_path = "web\prediction_helper\my_model.pickle"
+
+pickle_in = open(model_path,"rb")
 trained_model = pickle.load(pickle_in)
 
 def get_prediction(data):

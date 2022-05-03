@@ -1,45 +1,62 @@
-{% extends "index.html" %}
-
-{%block title%}About{%endblock%}
-
-{%block body%}
+{% extends "index.html" %} {%block title%}About{%endblock%} {%block body%}
 <!-- navbar -->
 {%include "navbar.html" %}
-<div style="width: auto;">
-<div class="card" >
-    <img src="exoplanet-detection\web\ishita.png"  >
+<div style="width: auto">
+  <div class="card">
+    <img
+      src="{{url_for('static',filename='ishita.png')}}"
+      alt="Kartik Tiwari"
+      width="200"
+      height="200"
+    />
     <div class="container">
       <h4><b>abc</b></h4>
       <p>test project</p>
     </div>
   </div>
 
-  <div class="card" style="width: max-content; ">
-    <img src="img_avatar.png"  style="width:50%">
+  <div class="card" style="width: max-content">
+    <img
+      src="{{url_for('static',filename='KARTIK.png')}}"
+      width="200"
+      height="200"
+    />
     <div class="container">
       <h4><b>abc</b></h4>
       <p>project</p>
     </div>
   </div>
 
-  <div class="card"  style="width: max-content;">
-    <img src="img_avatar.png"  style="width:50%">
+  <div class="card" style="width: max-content">
+    <img
+      src="{{url_for('static',filename='KARTIK.png')}}"
+      width="200"
+      height="200"
+    />
     <div class="container">
       <h4><b>abc</b></h4>
       <p>project</p>
     </div>
   </div>
 
-  <div class="card" style="width: max-content;">
-    <img src="img_avatar.png"  style="width:50%">
+  <div class="card" style="width: max-content">
+    <img
+      src="{{url_for('static',filename='KARTIK.png')}}"
+      width="200"
+      height="200"
+    />
     <div class="container">
       <h4><b>abc</b></h4>
       <p>project</p>
     </div>
   </div>
 
-  <div class="card" style="width: max-content;">
-    <img src="img_avatar.png"  style="width:50%">
+  <div class="card" style="width: max-content">
+    <img
+      src="{{url_for('static',filename='KARTIK.png')}}"
+      width="200"
+      height="200"
+    />
     <div class="container">
       <h4><b>abc</b></h4>
       <p>project</p>
