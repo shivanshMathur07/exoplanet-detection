@@ -10,6 +10,10 @@ app = Flask(__name__)
 def index():
     return render_template("homepage.html")
 
+@app.route("/about")
+def about_page():
+    return render_template("about.html")
+
 @app.route("/predict")
 def predict():
     # DUMMY_DATA.to_csv("test data files/test1.csv",mode="a",index=False,header=False)
