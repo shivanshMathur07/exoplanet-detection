@@ -6,10 +6,12 @@
 <!-- navbar -->
 {%include "navbar.html" %}
 <!-- content -->
+<br>
+<br>
 <div class="container">
     <div class="row">
-      <div class="col-md-12">
-<form class="entryform" style="text-align: center;">
+      <div class="col-md-12" style="background-image: url_for('static',filename='upload-file.jpg');">
+<form class="entryform" style="text-align: center; ">
 
     <input type="file" accept=".csv">
     <input type="submit" value="Submit">
@@ -17,5 +19,5 @@
   </div>
   </div>
   </div>
-  
+
 {%endblock%}
