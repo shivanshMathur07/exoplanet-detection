@@ -1,0 +1,55 @@
+# This file was produced by the NASA Exoplanet Archive  http://exoplanetarchive.ipac.caltech.edu
+# Tue May  3 11:38:07 2022
+#
+# COLUMN kepid:          KepID
+# COLUMN kepoi_name:     KOI Name
+# COLUMN kepler_name:    Kepler Name
+# COLUMN koi_disposition: Exoplanet Archive Disposition
+# COLUMN koi_pdisposition: Disposition Using Kepler Data
+# COLUMN koi_score:      Disposition Score
+# COLUMN koi_fpflag_nt:  Not Transit-Like False Positive Flag
+# COLUMN koi_fpflag_ss:  Stellar Eclipse False Positive Flag
+# COLUMN koi_fpflag_co:  Centroid Offset False Positive Flag
+# COLUMN koi_fpflag_ec:  Ephemeris Match Indicates Contamination False Positive Flag
+# COLUMN koi_period:     Orbital Period [days]
+# COLUMN koi_period_err1: Orbital Period Upper Unc. [days]
+# COLUMN koi_period_err2: Orbital Period Lower Unc. [days]
+# COLUMN koi_time0bk:    Transit Epoch [BKJD]
+# COLUMN koi_time0bk_err1: Transit Epoch Upper Unc. [BKJD]
+# COLUMN koi_time0bk_err2: Transit Epoch Lower Unc. [BKJD]
+# COLUMN koi_impact:     Impact Parameter
+# COLUMN koi_impact_err1: Impact Parameter Upper Unc.
+# COLUMN koi_impact_err2: Impact Parameter Lower Unc.
+# COLUMN koi_duration:   Transit Duration [hrs]
+# COLUMN koi_duration_err1: Transit Duration Upper Unc. [hrs]
+# COLUMN koi_duration_err2: Transit Duration Lower Unc. [hrs]
+# COLUMN koi_depth:      Transit Depth [ppm]
+# COLUMN koi_depth_err1: Transit Depth Upper Unc. [ppm]
+# COLUMN koi_depth_err2: Transit Depth Lower Unc. [ppm]
+# COLUMN koi_prad:       Planetary Radius [Earth radii]
+# COLUMN koi_prad_err1:  Planetary Radius Upper Unc. [Earth radii]
+# COLUMN koi_prad_err2:  Planetary Radius Lower Unc. [Earth radii]
+# COLUMN koi_teq:        Equilibrium Temperature [K]
+# COLUMN koi_teq_err1:   Equilibrium Temperature Upper Unc. [K]
+# COLUMN koi_teq_err2:   Equilibrium Temperature Lower Unc. [K]
+# COLUMN koi_insol:      Insolation Flux [Earth flux]
+# COLUMN koi_insol_err1: Insolation Flux Upper Unc. [Earth flux]
+# COLUMN koi_insol_err2: Insolation Flux Lower Unc. [Earth flux]
+# COLUMN koi_model_snr:  Transit Signal-to-Noise
+# COLUMN koi_tce_plnt_num: TCE Planet Number
+# COLUMN koi_tce_delivname: TCE Delivery
+# COLUMN koi_steff:      Stellar Effective Temperature [K]
+# COLUMN koi_steff_err1: Stellar Effective Temperature Upper Unc. [K]
+# COLUMN koi_steff_err2: Stellar Effective Temperature Lower Unc. [K]
+# COLUMN koi_slogg:      Stellar Surface Gravity [log10(cm/s**2)]
+# COLUMN koi_slogg_err1: Stellar Surface Gravity Upper Unc. [log10(cm/s**2)]
+# COLUMN koi_slogg_err2: Stellar Surface Gravity Lower Unc. [log10(cm/s**2)]
+# COLUMN koi_srad:       Stellar Radius [Solar radii]
+# COLUMN koi_srad_err1:  Stellar Radius Upper Unc. [Solar radii]
+# COLUMN koi_srad_err2:  Stellar Radius Lower Unc. [Solar radii]
+# COLUMN ra:             RA [decimal degrees]
+# COLUMN dec:            Dec [decimal degrees]
+# COLUMN koi_kepmag:     Kepler-band [mag]
+#
+kepid,kepoi_name,kepler_name,koi_disposition,koi_pdisposition,koi_score,koi_fpflag_nt,koi_fpflag_ss,koi_fpflag_co,koi_fpflag_ec,koi_period,koi_period_err1,koi_period_err2,koi_time0bk,koi_time0bk_err1,koi_time0bk_err2,koi_impact,koi_impact_err1,koi_impact_err2,koi_duration,koi_duration_err1,koi_duration_err2,koi_depth,koi_depth_err1,koi_depth_err2,koi_prad,koi_prad_err1,koi_prad_err2,koi_teq,koi_teq_err1,koi_teq_err2,koi_insol,koi_insol_err1,koi_insol_err2,koi_model_snr,koi_tce_plnt_num,koi_tce_delivname,koi_steff,koi_steff_err1,koi_steff_err2,koi_slogg,koi_slogg_err1,koi_slogg_err2,koi_srad,koi_srad_err1,koi_srad_err2,ra,dec,koi_kepmag
+11414511,K00767.01,Kepler-670 b,CONFIRMED,CANDIDATE,1.0000,0,0,0,0,2.816504904,1.6500000e-07,-1.6500000e-07,170.9676846,4.660000e-05,-4.660000e-05,0.1050,0.2640,-0.1190,2.50587,0.00666,-0.00666,1.6814e+04,1.100e+01,-1.100e+01,12.21,1.620e+00,-8.700e-01,1219.0,,,521.13,184.34,-97.95,1406.80,1,q1_q17_dr25_tce,5532.00,74.00,-83.00,4.452,0.063,-0.108,0.9550,0.1270,-0.0680,297.015470,49.225288,15.052
