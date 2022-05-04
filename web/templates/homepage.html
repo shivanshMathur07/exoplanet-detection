@@ -1,23 +1,30 @@
-{% extends "index.html" %}
-
-{%block title%}Home{%endblock%}
-
-{%block body%}
+{% extends "index.html" %} {%block title%}Home{%endblock%} {%block body%}
 <!-- navbar -->
 {%include "navbar.html" %}
 <!-- content -->
-<br>
-<br>
-<div class="container">
-    <div class="row">
-      <div class="col-md-12" style="background-image: url_for('static',filename='upload-file.jpg');">
-<form class="entryform" style="text-align: center; ">
 
-    <input type="file" accept=".csv">
-    <input type="submit" value="Submit">
-  </form>
+{% if candidate %}
+<div class="my-2 alert alert-info">
+  {{candidate}}
+</div>
+{%endif%}
+
+{% if false_positive %}
+<div class="my-2 alert alert-danger">
+  {{false_positive}}
+</div>
+{%endif%}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <form class="entryform" style="text-align: center" method="post" action="/" enctype="multipart/form-data">
+        <input type="file" accept=".csv" name="file_upload" />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
   </div>
-  </div>
-  </div>
+</div>
+
 
 {%endblock%}
