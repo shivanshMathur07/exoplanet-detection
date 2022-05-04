@@ -1,11 +1,10 @@
 # This file was produced by the NASA Exoplanet Archive  http://exoplanetarchive.ipac.caltech.edu
-# Thu Apr 28 02:22:44 2022
-#
-# User preference: *
+# Tue May  3 11:37:52 2022
 #
 # COLUMN kepid:          KepID
 # COLUMN kepoi_name:     KOI Name
 # COLUMN kepler_name:    Kepler Name
+# COLUMN koi_disposition: Exoplanet Archive Disposition
 # COLUMN koi_pdisposition: Disposition Using Kepler Data
 # COLUMN koi_score:      Disposition Score
 # COLUMN koi_fpflag_nt:  Not Transit-Like False Positive Flag
@@ -52,5 +51,5 @@
 # COLUMN dec:            Dec [decimal degrees]
 # COLUMN koi_kepmag:     Kepler-band [mag]
 #
-kepid,kepoi_name,kepler_name,koi_pdisposition,koi_score,koi_fpflag_nt,koi_fpflag_ss,koi_fpflag_co,koi_fpflag_ec,koi_period,koi_period_err1,koi_period_err2,koi_time0bk,koi_time0bk_err1,koi_time0bk_err2,koi_impact,koi_impact_err1,koi_impact_err2,koi_duration,koi_duration_err1,koi_duration_err2,koi_depth,koi_depth_err1,koi_depth_err2,koi_prad,koi_prad_err1,koi_prad_err2,koi_teq,koi_teq_err1,koi_teq_err2,koi_insol,koi_insol_err1,koi_insol_err2,koi_model_snr,koi_tce_plnt_num,koi_tce_delivname,koi_steff,koi_steff_err1,koi_steff_err2,koi_slogg,koi_slogg_err1,koi_slogg_err2,koi_srad,koi_srad_err1,koi_srad_err2,ra,dec,koi_kepmag
-3114661,K00796.01,,FALSE POSITIVE,0.0000,0,1,1,1,0.444291966,9.7000000e-08,-9.7000000e-08,169.8654060,1.690000e-04,-1.690000e-04,1.2580,0.3340,-0.1410,2.07920,0.01150,-0.01150,1.0967e+04,4.590e+01,-4.590e+01,27.51,3.460e+00,-1.730e+00,1836.0,,,2706.26,1149.42,-599.58,299.70,1,q1_q17_dr25_tce,5255.00,156.00,-156.00,4.678,0.028,-0.083,0.6360,0.0800,-0.0400,290.996890,38.284920,15.748
+kepid,kepoi_name,kepler_name,koi_disposition,koi_pdisposition,koi_score,koi_fpflag_nt,koi_fpflag_ss,koi_fpflag_co,koi_fpflag_ec,koi_period,koi_period_err1,koi_period_err2,koi_time0bk,koi_time0bk_err1,koi_time0bk_err2,koi_impact,koi_impact_err1,koi_impact_err2,koi_duration,koi_duration_err1,koi_duration_err2,koi_depth,koi_depth_err1,koi_depth_err2,koi_prad,koi_prad_err1,koi_prad_err2,koi_teq,koi_teq_err1,koi_teq_err2,koi_insol,koi_insol_err1,koi_insol_err2,koi_model_snr,koi_tce_plnt_num,koi_tce_delivname,koi_steff,koi_steff_err1,koi_steff_err2,koi_slogg,koi_slogg_err1,koi_slogg_err2,koi_srad,koi_srad_err1,koi_srad_err2,ra,dec,koi_kepmag
+11304958,K00764.01,Kepler-667 b,CONFIRMED,CANDIDATE,0.9980,0,0,0,0,41.439586620,7.5570000e-05,-7.5570000e-05,208.9320300,1.420000e-03,-1.420000e-03,0.3550,0.0400,-0.3550,10.59890,0.08800,-0.08800,2.7931e+03,2.260e+01,-2.260e+01,5.50,1.570e+00,-9.600e-01,516.0,,,16.72,14.66,-6.64,141.10,1,q1_q17_dr25_tce,5468.00,180.00,-164.00,4.367,0.153,-0.187,1.0460,0.2970,-0.1830,295.555050,49.017342,15.400
