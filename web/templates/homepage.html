@@ -5,7 +5,9 @@
 
 <div
   class="container-fluid p-0"
-  style="background-image: url({{url_for('static',filename='background-img.jpg')}}); background-size:cover;"
+  style="background-image: url({{url_for('static',filename='background-img.jpg')}}); 
+  background-size:cover;
+  "
 >
   <h1 class="text-white text-center py-5">Exoplanet Detection</h1>
   <h5 class="text-white text-center pb-5">
@@ -116,5 +118,7 @@
     </div>
   </div>
 </div>
+
+{%include 'footer.html'%}
 
 {%endblock%}
