@@ -25,6 +25,7 @@ def index():
                 session.pop('result',None)
                 return render_template("homepage.html",false_positive=false_positive)
         else:
+            session.clear()
             return render_template("homepage.html")
 
 @app.route("/about")
