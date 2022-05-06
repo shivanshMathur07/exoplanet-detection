@@ -3,28 +3,118 @@
 {%include "navbar.html" %}
 <!-- content -->
 
+<div
+  class="container-fluid p-0"
+  style="background-image: url({{url_for('static',filename='background-img.jpg')}}); background-size:cover;"
+>
+  <h1 class="text-white text-center py-5">Exoplanet Detection</h1>
+  <h5 class="text-white text-center pb-5">
+    A simple tool for classifying objects as Exoplanet Candidates or False
+    Positives.
+  </h5>
+  <div class="mx-auto" style="width: fit-content">
+    <a href="/about" class="btn btn-info mb-3 text-center">Learn More</a>
+  </div>
+</div>
+
 {% if candidate %}
-<div class="my-2 alert alert-info">
-  {{candidate}}
-</div>
+<div class="my-2 alert alert-info">{{candidate}}</div>
+{%endif%} {% if false_positive %}
+<div class="my-2 alert alert-danger">{{false_positive}}</div>
 {%endif%}
 
-{% if false_positive %}
-<div class="my-2 alert alert-danger">
-  {{false_positive}}
-</div>
-{%endif%}
-
-<div class="container">
+<div class="container my-2">
   <div class="row">
     <div class="col-md-12">
-      <form class="entryform" style="text-align: center" method="post" action="/" enctype="multipart/form-data">
-        <input type="file" accept=".csv" name="file_upload" />
-        <input type="submit" value="Submit" />
+      <form
+        class="form"
+        style="text-align: center"
+        method="post"
+        action="/"
+        enctype="multipart/form-data"
+      >
+        <input
+          class="btn text-white m-2"
+          type="file"
+          accept=".csv"
+          name="file_upload"
+          style="
+            background-color: #36096d;
+            background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);
+            border-radius: 20px;
+          "
+          required="true"
+        />
+        <input
+          class="btn text-white m-2"
+          type="submit"
+          value="Submit"
+          style="
+            background-color: #7f53ac;
+            background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+          "
+        />
       </form>
     </div>
   </div>
 </div>
 
+<div class="container-fluid">
+  <h1 class="text-white text-center mb-2 mt-2">How to use</h1>
+
+  <div class="row p-2 my-2">
+    <div class="col-md-4">
+      <p class="text-white" style="font-size: 25px">1. Select the file</p>
+      <p class="text-white" style="font-size: 20px">
+        Click on Choose file button and select the 'csv' file you want to
+        upload.
+      </p>
+    </div>
+
+    <div class="col-md-6 mx-auto">
+      <img
+        src="{{url_for('static',filename='how-to-1.png')}}"
+        alt="Choose a file"
+        class="img-fluid"
+      />
+    </div>
+  </div>
+
+  <div class="row p-2 my-2">
+    <div class="col-md-4">
+      <p class="text-white" style="font-size: 25px">2. Confirmation of file</p>
+      <p class="text-white" style="font-size: 20px">
+        After successful uploading of file it be shown in the box next to upload
+        button.
+      </p>
+    </div>
+
+    <div class="col-md-6 mx-auto">
+      <img
+        src="{{url_for('static',filename='how-to-2.png')}}"
+        alt="Choose a file"
+        class="img-fluid"
+      />
+    </div>
+  </div>
+
+  <div class="row p-2 my-2">
+    <div class="col-md-4">
+      <p class="text-white" style="font-size: 25px">3. Click on submit</p>
+      <p class="text-white" style="font-size: 20px">
+        Once file is uploaded simply click submit and the prediction will come
+        just above the file upload section.
+      </p>
+    </div>
+
+    <div class="col-md-6 mx-auto">
+      <img
+        src="{{url_for('static',filename='how-to-3.png')}}"
+        alt="Choose a file"
+        class="img-fluid"
+      />
+    </div>
+  </div>
+</div>
 
 {%endblock%}

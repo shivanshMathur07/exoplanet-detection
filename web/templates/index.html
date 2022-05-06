@@ -17,9 +17,14 @@
     />
 
     <title>{%block title%}{%endblock%}</title>
+    <style>
+      body{
+        background-color: #0f1724;
+      }
+    </style>
   </head>
   <body>
-    {%block body%} {%endblock%}
+    <div class="content">{%block body%} {%endblock%}</div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
