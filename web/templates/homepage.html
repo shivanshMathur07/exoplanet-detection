@@ -18,9 +18,9 @@
 </div>
 
 {% if candidate %}
-<div class="my-2 alert alert-info">{{candidate}}</div>
+<div class="my-2 alert alert-info text-center">{{candidate}}</div>
 {%endif%} {% if false_positive %}
-<div class="my-2 alert alert-danger">{{false_positive}}</div>
+<div class="my-2 alert alert-danger text-center">{{false_positive}}</div>
 {%endif%}
 
 <div class="container my-2">
@@ -80,6 +80,8 @@
     </div>
   </div>
 
+  <hr style="border: 1px solid;">
+
   <div class="row p-2 my-2">
     <div class="col-md-4">
       <p class="text-white" style="font-size: 25px">2. Confirmation of file</p>
@@ -98,6 +100,8 @@
     </div>
   </div>
 
+  <hr style="border: 1px solid;">
+
   <div class="row p-2 my-2">
     <div class="col-md-4">
       <p class="text-white" style="font-size: 25px">3. Click on submit</p>
@@ -115,6 +119,7 @@
       />
     </div>
   </div>
+
 </div>
 
 {%include 'footer.html'%}

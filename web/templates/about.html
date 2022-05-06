@@ -4,7 +4,7 @@
 
 <div class="container">
     <div class="row p-2 gy-2">
-      <div class="col-sm-4">
+      <div class="col-sm-4 my-2">
 
   <div class="card" style="width: auto;">
     <img
@@ -20,7 +20,7 @@
     </div>
   </div>
 </div>
-<div class="col-sm-4">
+<div class="col-sm-4 my-2">
   <div class="card" style="width: auto;">
     <img
       src="{{url_for('static',filename='KARTIK.png')}}"
@@ -35,7 +35,7 @@
     </div>
   </div>
 </div>
-<div class="col-sm-4">
+<div class="col-sm-4 my-2">
   <div class="card" style="width: auto;">
     <img
       src="{{url_for('static',filename='ishvinder.jpg')}}"
@@ -55,7 +55,7 @@
 <div class="container">
   <div class="row p-2 gy-2">
     <div class="col-sm-2"></div>
-    <div class="col-sm-4">
+    <div class="col-sm-4 my-2">
   <div class="card" style="width: auto;" >
     <img
       src="{{url_for('static',filename='sanskriti.jpeg')}}"
@@ -70,7 +70,7 @@
     </div>
   </div>
 </div>
-<div class="col-sm-4">
+<div class="col-sm-4 my-2">
   <div class="card" style="width: auto;">
     <img
       src="{{url_for('static',filename='shivansh.jpeg')}}"
@@ -99,10 +99,11 @@
       <!-- <div style="background-color: #425773; width: 100%;" > -->
        <h2 style="color: #ffff; text-align: center;" >About the Project</h2>
        <p style="color: #ffff; text-align: justify;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-      <img  src="{{url_for('static',filename='exoplanets.png')}}"
-      style="align-items: center; margin-left: 100px;
-      width: 80%;
+      <div style="width: fit-content;" class="mx-auto">
+       <img  src="{{url_for('static',filename='exoplanets.png')}}"
+      style="width: 80%;
       height: 250px"/>
+      </div>
       </div>
     </div>
   <!-- </div> -->
