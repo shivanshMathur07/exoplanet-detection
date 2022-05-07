@@ -9,8 +9,11 @@ model_path = "exoplanet-detection\web\prediction_helper\my_model.pickle"
 pickle_in = open(model_path,"rb")
 trained_model = pickle.load(pickle_in)
 
+data_shape_for_pred = (1,49)
+
 def get_prediction(data):
-    # print(data.shape)
+    if( (data.shape) != data_shape_for_pred):
+        return("False Positive Candidate")
     data = data.drop(['kepid','kepoi_name','kepler_name','koi_pdisposition','koi_disposition','koi_score','koi_teq_err1','koi_teq_err2'],axis=1)
     data['koi_tce_delivname'] = data['koi_tce_delivname'].fillna(data['koi_tce_delivname'].mode()[0])
     #for filling numerical empty values

@@ -2,6 +2,7 @@ from flask import Flask,render_template,url_for,session,redirect,request
 import pandas as pd
 from prediction_helper import my_prediction
 from werkzeug.utils import secure_filename
+import sys
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'ABC2334@fnf@@/jhg'
@@ -13,6 +14,11 @@ def index():
         uploaded_file = request.files['file_upload']
         uploaded_file.save(f"web/test_files/uploads/{secure_filename(uploaded_file.filename)}")
         session['file_name'] = secure_filename(uploaded_file.filename)
+        check_name = session['file_name'][-3:]
+        if(check_name != 'csv'):
+            result = "Please upload a csv file !"
+            session.clear()
+            return render_template("homepage.html",result=result)
         return redirect("/predict")
     else:
         if 'result' in session:
@@ -36,9 +42,13 @@ def about_page():
 def predict():
     if 'file_name' in session:
         data_file_path = f"web/test_files/uploads/{session['file_name']}"
-        data = pd.read_csv(data_file_path,skiprows=53)
-        session['result'] = my_prediction.get_prediction(data)
-        return redirect(url_for('index'))
+        try:
+            data = pd.read_csv(data_file_path,skiprows=53)
+            session['result'] = my_prediction.get_prediction(data)
+            return redirect(url_for('index'))
+        except Exception as e:
+            session['result'] = "False Positive Candidate"
+            return redirect(url_for('index'))
     else:
        return redirect("/")
 
