@@ -4,7 +4,11 @@ import pandas as pd
 import warnings
 warnings.filterwarnings(action='ignore')
 
+<<<<<<< HEAD
 model_path = "web\prediction_helper\my_model.pickle"
+=======
+model_path = "web/prediction_helper/my_model.pickle"
+>>>>>>> 8fd44528a69ce191639b89b047ffd1240ad11e16
 
 pickle_in = open(model_path,"rb")
 trained_model = pickle.load(pickle_in)
